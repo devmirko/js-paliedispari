@@ -18,28 +18,11 @@ console.log("il numero è:", risultato);
 
 
 if (risultato === scelta) {
-alert("hai vinto la partita");
+   alert("hai vinto la partita");
     
 } else {
     alert("hai perso la partita");
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
