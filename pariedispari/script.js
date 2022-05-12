@@ -2,8 +2,16 @@
 const scelta = prompt("scegli tra pari e dispari");
 console.log("scelta",scelta);
 // l'utente sceglie un numero tra 1 e 5 da inserire in un input
-const userNum = parseInt(prompt("scegli un numero da 1 a 5"));
+const userNum = document.querySelector("input");
 console.log("sceltaNumero",userNum);
+// l'utente manda l'input tramite un bottone
+const myButton = document.querySelector("button");
+console.log(myButton);
+
+
+
+myButton.addEventListener("click",
+    function(){
 // puntata del pc 
 let ranNum = getRandomNumPc( 1, 5 );
 console.log(ranNum);
@@ -18,13 +26,12 @@ console.log("il numero è:", risultato);
 
 
 if (risultato === scelta) {
-   alert("hai vinto la partita");
-    
+    document.getElementById("risultato").innerHTML = "hai vinto partita";
 } else {
-    alert("hai perso la partita");
+    document.getElementById("risultato").innerHTML = "hai perso la partita";
 }
 
-
+}  )
 
 
 //funzioni
