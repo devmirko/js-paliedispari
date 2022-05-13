@@ -4,9 +4,9 @@ const parola = prompt("inserisci la parola");
 let parolaInversa = invertiParola(parola);
 // controllo sulla parola se e palindroma
 if (parola == parolaInversa) {
-    console.log("la parola è palindroma");
+  document.getElementById("risultato").innerHTML = "la parola  è palindroma";
 } else {
-    console.log('la parola non è palindroma');
+  document.getElementById("risultato").innerHTML = "la parola non è palindroma";
   }
 
 
